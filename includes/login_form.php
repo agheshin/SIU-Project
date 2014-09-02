@@ -72,7 +72,7 @@ echo '
 </div> 
   ';
  echo "
-    <!-- Bootstrap core JavaScript ================================================== -->
+    <!-- Bootstrap core JavaScript ================================================== ++ -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>
     <script src=\"$server_url/bootstrap/js/bootstrap.js\"></script>
