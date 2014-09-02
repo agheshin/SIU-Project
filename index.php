@@ -1,4 +1,6 @@
 <?php
+// my coment
+
 require_once('includes/define.php');
 include($aplication_doc_root.'/functions/functions.php');
 
