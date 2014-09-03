@@ -1,6 +1,7 @@
 <?php
 // my coment
 // А это мой. И твой не исчез! 
+// A ecli udaliti
 
 require_once('includes/define.php');
 include($aplication_doc_root.'/functions/functions.php');
