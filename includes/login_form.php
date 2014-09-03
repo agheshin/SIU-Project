@@ -1,6 +1,13 @@
 <?php 
 
- echo'<div class="container"> ';
+ echo'<div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Please Sign In</h3>
+                    </div>
+                    <div class="panel-body">';
 
 
  if(isset($_POST['username'])) 
@@ -63,20 +70,24 @@
  
 
 echo '  
-<form method="post" action="'.$server_url.'/index.php" class="form-signin" role="form">
-<h2 class="form-signin-heading">Please sign in</h2>
-    <input type="text" name="username" class="form-control" placeholder="Username" required autofocus><label></label>
-    <input type="password" class="form-control" placeholder="Password" name="password" required><label></label>
-	<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>	
-</form>
-</div> 
+						<form method="post" action="'.$server_url.'/index.php" role="form">
+							<fieldset>
+								<div class="form-group">
+									<input class="form-control" placeholder="Username" name="username" type="text" autofocus required>
+								</div>
+								<div class="form-group">
+									<input class="form-control" placeholder="Password" name="password" type="password" value="" required>
+								</div>
+								<button class="btn btn-lg btn-success btn-block" type="submit">Login</button>
+							</fieldset>
+						</form>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div> 
   ';
- echo "
-    <!-- Bootstrap core JavaScript ================================================== ++ -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>
-    <script src=\"$server_url/bootstrap/js/bootstrap.js\"></script>
-    </body>";
+ 
 html_header_end(); 
 
 
